@@ -35,7 +35,7 @@ class Position {
     if(this.xPos == null || this.yPos == null || position.xPos == null || position.yPos == null)
       return null;
     else
-      return Math.sqrt(Math.pow((this.xPos-position.xPos)+(this.yPos-position.yPos), 2));
+      return Math.sqrt(Math.pow((this.xPos-position.xPos), 2)+Math.pow((this.yPos-position.yPos), 2));
   }
 
   isNull() {
